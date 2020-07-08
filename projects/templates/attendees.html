@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br><br><br><br>
+  <h1>Attendees</h1>
+  <!--<a class="btn btn-primary "href="/add_article">Add Event</a>-->
+  <hr>
+  <table class="table table-striped">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>About</th>
+    
+
+    </tr>
+    {% for attendee in attendees %}
+      <tr>
+        <td>{{attendee.id}}</td>
+        <td>{{attendee.name}}</td>
+        <td>{{attendee.email}}</td>
+        <td>{{attendee.about | safe}}</td>
+
+
+      </tr>
+    {% endfor %}
+  </table>
+
+
+
+{% endblock %}

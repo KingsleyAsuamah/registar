@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br><br><br><br>
+  <h1>{{article.title}}</h1>
+  <small>Created By: {{article.host}} on {{article.date}}</small><br>
+  <small>Venue:  {{article.location}}</small>
+  <hr>
+  <div>
+    {{article.description | safe}}
+  </div>
+  <br>
+  <a href="/attend" class="btn btn-primary btnlg">Attend Event</a>
+{% endblock %}

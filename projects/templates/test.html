@@ -1,0 +1,19 @@
+<table>
+    <thead>
+    <tr>
+        <th>email</th>
+        <th>Name</th>
+        <th>username</th>
+
+    </tr>
+    </thead>
+    <tbody>
+        {% for row in form %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

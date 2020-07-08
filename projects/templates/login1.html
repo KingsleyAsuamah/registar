@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  <br><br>
+  <br>
+  <br>
+<div class="container h-100 d-flex justify-content-center">
+  <div class="col-md-6 col-md-offset-3">
+
+  <form class="form-signin">
+    <div class="text-center mb-4">
+     <img class="mb-4" src="https://i.ibb.co/9tXRzWn/regg.png" alt="" >
+     <h1 class="h2 mb-3 font-weight-normal">Admin User Login</h1>
+     <!--<p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>-->
+     <p>This portal grants access to <code>:backend stuff</code>. Proceed if you have admin credentials, else <a href="/">[click here]</a> to go back to the frontend.</p>
+    </div>
+
+    <div class="form-label-group">
+     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+     <label for="inputEmail">Email address</label>
+    </div>
+
+    <div class="form-label-group">
+     <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+     <label for="inputPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+     <label>
+       <input type="checkbox" value="remember-me"> Remember me
+     </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted text-center">&copy; Kingsley 2020</p>
+  </form>
+
+  </div>
+{% endblock %}

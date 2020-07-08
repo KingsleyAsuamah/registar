@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+  <div class="jumbotron text-center">
+      <img class="mb-4" src="https://i.ibb.co/9tXRzWn/regg.png" alt="" >
+      <h1>Welcome to regiSTAR </h1>
+      <p class="lead">This is a Registration Platform for events and all sorts</p>
+      {% if session.logged_in == NULL %}
+        <small>--If you are an Admin--</small><br>
+        <a href="/register" class="btn btn-primary btnlg">Register</a>
+        <a href="/loginx" class="btn btn-success btnlg">Login</a>
+
+      {% endif %}
+  </div>
+
+
+<div class="container">
+ <div class="row">
+   <div class="col-sm-4">
+     <h3>Event 1</h3>
+     <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p>
+   </div>
+   <div class="col-sm-4">
+     <h3>Event 2</h3>
+     <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p>
+   </div>
+   <div class="col-sm-4">
+     <h3>Event 3</h3>
+     <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p>
+   </div>
+ </div>
+</div>
+<a href="/articles" class="btn btn-primary btnlg">See All Events</a>
+{% endblock %}
